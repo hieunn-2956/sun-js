@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link link href="https://fonts.googleapis.com/css2?family=Inspiration&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&amp;family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&amp;family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200;1,300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script data-main="scripts/main.js" src="scripts/require.js"></script>
+    <title>Cart</title>
+    <header><i class="icon fa-solid fa-bars bars-control" type="button" data-bs-toggle="modal" data-bs-target="#sidebar"> </i>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"> <a class="nav-link " href="contact.html">Tài khoản của tôi             </a></li>
+          <li class="nav-item"> <a class="nav-link nav-link--active" href="orders.html">Trạng thái đơn hàng             </a></li>
+          <li class="nav-item"> <a class="nav-link " href="address.html">Danh sách đăng kí             </a></li>
+          <li class="nav-item"> <a class="nav-link " href="cart.html">Giỏ hàng             </a></li>
+          <li class="nav-item"> <a class="nav-link " href="login.html">Đăng nhập             </a></li>
+          <li class="nav-item"> <a class="nav-link " href="signup.html">Đăng kí             </a></li>
+        </ul>
+        <div class="nav-search">
+          <input class="input input--nonebg" placeholder="Tìm kiếm ở đây"/><i class="icon fa-solid fa-magnifying-glass"></i>
+        </div>
+      </nav><img class="hero" src="./assets/images/hero.jpg"/>
+      <nav class="menu"><img class="menu__img" src="./assets/images/logo-menu.jpg"/>
+        <li class="menu-item dropdown"> <a class="menu-link " aria-expanded="false" href="index.html">TRANG CHỦ       </a>
+        </li>
+        <li class="menu-item dropdown"> <a class="menu-link menu-link--active" id="undefined" data-bs-toggle="dropdown" aria-expanded="false" href="#">RƯỢU VANG ĐỎ</a>
+          <div class="dropdown-menu" aria-labelledby="undefined">
+            <div class="mega-container"> 
+              <div class="mega-column"> 
+                <h5 class="heading-titary">RƯỢU NGOẠI</h5>
+                <ul>
+                  <li><a href="product-list.html">Rượu Chivas</a></li>
+                  <li><a href="product-list.html">Johnie Walker</a></li>
+                </ul>
+              </div>
+              <div class="mega-column"> 
+                <h5 class="heading-titary">RƯỢU VANG</h5>
+                <ul>
+                  <li><a href="product-list.html">Whisky</a></li>
+                  <li><a href="product-list.html">Martin</a></li>
+                </ul>
+              </div>
+              <div class="mega-column"> 
+                <h5 class="heading-titary">RƯỢU NỘI</h5>
+                <ul>
+                  <li><a href="product-list.html">Vang đà lạt</a></li>
+                  <li><a href="product-list.html">Vang thăng long</a></li>
+                </ul>
+              </div><img src="./assets/images/hot-sale-banner.jpg"/>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item dropdown"> <a class="menu-link " id="undefined" data-bs-toggle="dropdown" aria-expanded="false" href="#">RƯỢU TRẮNG</a>
+          <div class="dropdown-menu" aria-labelledby="undefined">
+            <div class="mega-container"> 
+              <div class="mega-column"> 
+                <h5 class="heading-titary">RƯỢU NGOẠI</h5>
+                <ul>
+                  <li><a href="product-list.html">Rượu Chivas</a></li>
+                  <li><a href="product-list.html">Johnie Walker</a></li>
+                </ul>
+              </div>
+              <div class="mega-column"> 
+                <h5 class="heading-titary">RƯỢU VANG</h5>
+                <ul>
+                  <li><a href="product-list.html">Whisky</a></li>
+                  <li><a href="product-list.html">Martin</a></li>
+                </ul>
+              </div>
+              <div class="mega-column"> 
+                <h5 class="heading-titary">RƯỢU NỘI</h5>
+                <ul>
+                  <li><a href="product-list.html">Vang đà lạt</a></li>
+                  <li><a href="product-list.html">Vang thăng long</a></li>
+                </ul>
+              </div><img src="./assets/images/hot-sale-banner.jpg"/>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item dropdown"> <a class="menu-link " id="undefined" data-bs-toggle="dropdown" aria-expanded="false" href="#">CHAMPAGNE</a>
+          <div class="dropdown-menu" aria-labelledby="undefined">
+            <div class="mega-container"> 
+              <div class="mega-column"> 
+                <h5 class="heading-titary">RƯỢU NGOẠI</h5>
+                <ul>
+                  <li><a href="product-list.html">Rượu Chivas</a></li>
+                  <li><a href="product-list.html">Johnie Walker</a></li>
+                </ul>
+              </div>
+              <div class="mega-column"> 
+                <h5 class="heading-titary">RƯỢU VANG</h5>
+                <ul>
+                  <li><a href="product-list.html">Whisky</a></li>
+                  <li><a href="product-list.html">Martin</a></li>
+                </ul>
+              </div>
+              <div class="mega-column"> 
+                <h5 class="heading-titary">RƯỢU NỘI</h5>
+                <ul>
+                  <li><a href="product-list.html">Vang đà lạt</a></li>
+                  <li><a href="product-list.html">Vang thăng long</a></li>
+                </ul>
+              </div><img src="./assets/images/hot-sale-banner.jpg"/>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item dropdown"> <a class="menu-link " aria-expanded="false" href="contact.html">THÔNG TIN       </a>
+        </li>
+        <li class="menu-item dropdown"> <a class="menu-link " aria-expanded="false" href="blog-list.html">BLOG       </a>
+        </li>
+        <li class="menu-item dropdown"> <a class="menu-link " aria-expanded="false" href="contact.html">LIÊN HỆ       </a>
+        </li>
+      </nav>
+      <div class="header-box"> 
+        <div class="header-box__container">
+          <h1 class="header-title">Rượu</h1>
+        </div>
+      </div>
+      <div class="modal modal--full fade" id="sidebar" tabindex="-1" aria-hidden="true"> 
+        <div class="modal-dialog  modal-fullscreen">
+          <div class="modal-content">   
+            <div class="sidebar-container">
+              <div class="modal-header"><i class="fa-solid fa-close " type="button" data-bs-dismiss="modal" aria-label="Close"></i></div>
+              <h5 class="heading-titary">NAVIGATION </h5>
+              <ul class="sidebar-nav">
+                <li class="nav-item"> <a class="nav-link " href="contact.html">Tài khoản của tôi             </a></li>
+                <li class="nav-item"> <a class="nav-link nav-link--active" href="orders.html">Trạng thái đơn hàng             </a></li>
+                <li class="nav-item"> <a class="nav-link " href="address.html">Danh sách đăng kí             </a></li>
+                <li class="nav-item"> <a class="nav-link " href="cart.html">Giỏ hàng             </a></li>
+                <li class="nav-item"> <a class="nav-link " href="login.html">Đăng nhập             </a></li>
+                <li class="nav-item"> <a class="nav-link " href="signup.html">Đăng kí             </a></li>
+              </ul>
+              <h5 class="heading-titary">MENU</h5>
+              <div class="sidebar-menu"> 
+                <li class="menu-item dropdown"> <a class="menu-link " aria-expanded="false" href="index.html">TRANG CHỦ       </a>
+                </li>
+                <li class="menu-item dropdown"> <a class="menu-link menu-link--active" id="undefined" data-bs-toggle="dropdown" aria-expanded="false" href="#">RƯỢU VANG ĐỎ</a>
+                  <div class="dropdown-menu" aria-labelledby="undefined">
+                    <div class="mega-container"> 
+                      <div class="mega-column"> 
+                        <h5 class="heading-titary">RƯỢU NGOẠI</h5>
+                        <ul>
+                          <li><a href="product-list.html">Rượu Chivas</a></li>
+                          <li><a href="product-list.html">Johnie Walker</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-column"> 
+                        <h5 class="heading-titary">RƯỢU VANG</h5>
+                        <ul>
+                          <li><a href="product-list.html">Whisky</a></li>
+                          <li><a href="product-list.html">Martin</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-column"> 
+                        <h5 class="heading-titary">RƯỢU NỘI</h5>
+                        <ul>
+                          <li><a href="product-list.html">Vang đà lạt</a></li>
+                          <li><a href="product-list.html">Vang thăng long</a></li>
+                        </ul>
+                      </div><img src="./assets/images/hot-sale-banner.jpg"/>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item dropdown"> <a class="menu-link " id="undefined" data-bs-toggle="dropdown" aria-expanded="false" href="#">RƯỢU TRẮNG</a>
+                  <div class="dropdown-menu" aria-labelledby="undefined">
+                    <div class="mega-container"> 
+                      <div class="mega-column"> 
+                        <h5 class="heading-titary">RƯỢU NGOẠI</h5>
+                        <ul>
+                          <li><a href="product-list.html">Rượu Chivas</a></li>
+                          <li><a href="product-list.html">Johnie Walker</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-column"> 
+                        <h5 class="heading-titary">RƯỢU VANG</h5>
+                        <ul>
+                          <li><a href="product-list.html">Whisky</a></li>
+                          <li><a href="product-list.html">Martin</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-column"> 
+                        <h5 class="heading-titary">RƯỢU NỘI</h5>
+                        <ul>
+                          <li><a href="product-list.html">Vang đà lạt</a></li>
+                          <li><a href="product-list.html">Vang thăng long</a></li>
+                        </ul>
+                      </div><img src="./assets/images/hot-sale-banner.jpg"/>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item dropdown"> <a class="menu-link " id="undefined" data-bs-toggle="dropdown" aria-expanded="false" href="#">CHAMPAGNE</a>
+                  <div class="dropdown-menu" aria-labelledby="undefined">
+                    <div class="mega-container"> 
+                      <div class="mega-column"> 
+                        <h5 class="heading-titary">RƯỢU NGOẠI</h5>
+                        <ul>
+                          <li><a href="product-list.html">Rượu Chivas</a></li>
+                          <li><a href="product-list.html">Johnie Walker</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-column"> 
+                        <h5 class="heading-titary">RƯỢU VANG</h5>
+                        <ul>
+                          <li><a href="product-list.html">Whisky</a></li>
+                          <li><a href="product-list.html">Martin</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-column"> 
+                        <h5 class="heading-titary">RƯỢU NỘI</h5>
+                        <ul>
+                          <li><a href="product-list.html">Vang đà lạt</a></li>
+                          <li><a href="product-list.html">Vang thăng long</a></li>
+                        </ul>
+                      </div><img src="./assets/images/hot-sale-banner.jpg"/>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item dropdown"> <a class="menu-link " aria-expanded="false" href="contact.html">THÔNG TIN       </a>
+                </li>
+                <li class="menu-item dropdown"> <a class="menu-link " aria-expanded="false" href="blog-list.html">BLOG       </a>
+                </li>
+                <li class="menu-item dropdown"> <a class="menu-link " aria-expanded="false" href="contact.html">LIÊN HỆ       </a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="cart">
+      <div class="container">
+        <nav class="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item"> <a href="#">Sản phẩm</a></li>
+            <li class="breadcrumb-item"> <a href="#">Giao hàng</a></li>
+          </ol>
+        </nav>
+        <h4 class="heading-titary heading-decoration heading-decoration--arrow">GIỎ HÀNG</h4>
+        <div class="cart-list">
+          <table class="table">
+            <tr> 
+              <th>ẢNH</th>
+              <th>TÊN SẢN PHẨM</th>
+              <th>GIÁ</th>
+              <th>SỐ LƯỢNG</th>
+              <th>TỔNG SỐ</th>
+              <th>XÓA</th>
+            </tr>
+            <tr> 
+              <th> <img src="./assets/images/1.jpg"/></th>
+              <th>RƯỢU VANG ĐỎ</th>
+              <th class="hightlight-column">350000     </th>
+              <th>1</th>
+              <th class="hightlight-column">350000     </th>
+              <th> <i class="fa-solid fa-trash"></i></th>
+            </tr>
+            <tr> 
+              <th> <img src="./assets/images/1.jpg"/></th>
+              <th>RƯỢU VANG ĐỎ</th>
+              <th class="hightlight-column">350000     </th>
+              <th>1</th>
+              <th class="hightlight-column">350000     </th>
+              <th> <i class="fa-solid fa-trash"></i></th>
+            </tr>
+            <tr> 
+              <th> <img src="./assets/images/1.jpg"/></th>
+              <th>RƯỢU VANG ĐỎ</th>
+              <th class="hightlight-column">350000     </th>
+              <th>1</th>
+              <th class="hightlight-column">350000     </th>
+              <th> <i class="fa-solid fa-trash"></i></th>
+            </tr>
+          </table>
+        </div>
+        <div class="cart-buttons"><a class="button  button--4xl " href="index.html">TIẾP TỤC MUA HÀNG</a>
+          <button class="button button--submit button--lg " data-bs-toggle="undefined" data-bs-target="#undefined">XÓA </button>
+          <button class="button button--submit button--xxl " data-bs-toggle="undefined" data-bs-target="#undefined">CẬP NHẬT </button>
+        </div>
+      </div>
+    </section>
+    <footer> 
+      <div class="container"> 
+        <div class="logo-list">
+          <div class="logo-item "><img src="./assets/images/authentic.jpg"/></div>
+          <div class="logo-item logo-item--sideborder"><img src="./assets/images/retrobrand.jpg"/></div>
+          <div class="logo-item "><img src="./assets/images/bearbrand.jpg"/></div>
+        </div>
+        <div class="footer-contain">
+          <div class="footer-infor">
+            <h3 class="heading-secondary">THÔNG TIN</h3>
+            <nav class="footer-direction">
+              <ul> 
+                <li class="footer-item"> <a class="footer-link" href="#">VỀ CHÚNG TÔI</a></li>
+                <li class="footer-item"> <a class="footer-link" href="#">GIAO HÀNG</a></li>
+                <li class="footer-item"> <a class="footer-link" href="#">CẢM NGHĨ</a></li>
+                <li class="footer-item"> <a class="footer-link" href="#">LƯU TRỮ</a></li>
+                <li class="footer-item"> <a class="footer-link" href="#">CHÍNH SÁCH RIÊNG TƯ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-buy">
+            <h3 class="heading-secondary">MUA HÀNG</h3>
+            <nav class="footer-direction">
+              <ul></ul>
+              <li class="footer-item"> <a class="footer-link" href="#">VẬN CHUYỂN VÀ TRẢ HÀNG</a></li>
+              <li class="footer-item"> <a class="footer-link" href="#">MUA HÀNG AN TOÀN</a></li>
+              <li class="footer-item"> <a class="footer-link" href="#">LIÊN KẾT</a></li>
+              <li class="footer-item"> <a class="footer-link" href="#">VẬN CHUYỂN QUỐC TẾ</a></li>
+              <li class="footer-item"> <a class="footer-link" href="#">DỊCH VỤ GIẢM GIÁ</a></li>
+            </nav>
+          </div>
+          <div class="footer-social">
+            <h3 class="heading-secondary">GỬI EMAIL</h3>
+            <p>Gửi email cho chúng tôi để được hỗ trợ</p>
+            <div class="footer-send">
+              <input class="input " placeholder="Enter your email"/>
+              <button class="button button--arrow  " data-bs-toggle="undefined" data-bs-target="#undefined">GỬI </button>
+            </div>
+            <div class="social-list">   <i class="fa-brands fa-twitter">   </i><i class="fa-brands fa-google-plus-g">   </i><i class="fa-brands fa-linkedin-in">   </i><i class="fa-brands fa-pinterest-p">   </i>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <h3 class="heading-secondary">LIÊN HỆ</h3>
+            <div class="contact">
+              <div class="contact__address">                 <i class="fa-solid fa-location-dot"></i>
+                <p>Tầng 4, tòa nhà Hanoi Group, số 442 Đội Cấn, P Cống Vị, Q Ba Đình, Hà Nội</p>
+              </div>
+              <div class="contact__direct"> <i class="fa-solid fa-phone"></i>
+                <p>(04) 0984444334 </p>
+              </div>
+              <div class="contact__direct"> <i class="fa-solid fa-phone"></i>
+                <p>(04) 0984444334 </p>
+              </div>
+              <div class="contact__direct"> <i class="fa-solid fa-phone"></i>
+                <p>(04) 0984444334 </p>
+              </div>
+              <div class="contact__direct"> <i class="fa-solid fa-inbox"></i>
+                <p>winhourse@gmail.com </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-payment">
+        <p class="copyright">Copyright 2008-2014 DKT Technology JSC</p>
+        <div class="payment-list"><i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-paypal"></i><i class="fa-brands fa-google-pay"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./script/index.js"> </script>
+  </head>
+  <body></body>
+</html>
